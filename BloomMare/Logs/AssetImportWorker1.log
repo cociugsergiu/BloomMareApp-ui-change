@@ -2,8 +2,8 @@ Unity Editor version:    2022.3.21f1 (bf09ca542b87)
 Branch:                  2022.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 14.4 (Build 23E214)
-Darwin version:          23.4.0
+macOS version:           Version 13.4 (Build 22F66)
+Darwin version:          22.5.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        8192 MB
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker1
 -projectPath
-/Applications/GitHub/BloomMareApp/BloomMare
+/Users/anavizitiv/Documents/GitHub/BloomMareApp/BloomMare
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50049
-Successfully changed project path to: /Applications/GitHub/BloomMareApp/BloomMare
-/Applications/GitHub/BloomMareApp/BloomMare
+49380
+Successfully changed project path to: /Users/anavizitiv/Documents/GitHub/BloomMareApp/BloomMare
+/Users/anavizitiv/Documents/GitHub/BloomMareApp/BloomMare
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,16 +56,16 @@ Successfully changed project path to: /Applications/GitHub/BloomMareApp/BloomMar
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8537356992] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 2857711434 [EditorId] 2857711434 [Version] 1048832 [Id] OSXEditor(0,Andreeas-MacBook-Air-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8428510720] Host "[IP] 192.0.0.2 [Port] 0 [Flags] 2 [Guid] 1467682076 [EditorId] 1467682076 [Version] 1048832 [Id] OSXEditor(0,Anas-MacBook-Air-5.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8537356992] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 2857711434 [EditorId] 2857711434 [Version] 1048832 [Id] OSXEditor(0,Andreeas-MacBook-Air-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8428510720] Host "[IP] 192.0.0.2 [Port] 0 [Flags] 2 [Guid] 1467682076 [EditorId] 1467682076 [Version] 1048832 [Id] OSXEditor(0,Anas-MacBook-Air-5.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 36.11 ms, found 7 plugins.
-Preloading 4 native plugins for Editor in 65.01 ms.
+Refreshing native plugins compatible for Editor in 17.52 ms, found 7 plugins.
+Preloading 4 native plugins for Editor in 10.43 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Applications/GitHub/BloomMareApp/BloomMare/Assets
+[Subsystems] Discovering subsystems at path /Users/anavizitiv/Documents/GitHub/BloomMareApp/BloomMare/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M1 (high power)
 Metal devices available: 1
@@ -76,47 +76,67 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56993
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56457
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.001158 seconds.
-- Loaded All Assemblies, in  0.339 seconds
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/VisionOSPlayer/UnityEditor.VisionOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.007116 seconds.
+- Loaded All Assemblies, in  0.255 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for AppleTV target not found
+objc[1457]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/AppleTVSupport/arm64/UnityEditor.iOS.Native.dylib (0x17da145d8) and /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/VisionOSPlayer/arm64/UnityEditor.VisionOS.Native.dylib (0x17dac85d8). One of the two will be used. Which one is undefined.
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for VisionOS target not found
+Native extension for iOS target not found
+2024-04-21 15:47:56.074 Unity[1457:17944] [XcodeApplications] Failed to read NSDictionary from path /Contents/Info.plist
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 310 ms
+Android Extension - Scanning For ADB Devices 72 ms
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.550 seconds
-Domain Reload Profiling: 888ms
-	BeginReloadAssembly (124ms)
+- Finished resetting the current domain, in  0.362 seconds
+Domain Reload Profiling: 617ms
+	BeginReloadAssembly (71ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (136ms)
-		LoadAssemblies (124ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (111ms)
+		LoadAssemblies (73ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (131ms)
-				TypeCache.ScanAssembly (119ms)
+		AnalyzeDomain (108ms)
+			TypeCache.Refresh (107ms)
+				TypeCache.ScanAssembly (96ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (550ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (363ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (503ms)
+		SetupLoadedEditorAssemblies (324ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (396ms)
+			InitializePlatformSupportModulesInManaged (230ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (73ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,10 +144,17 @@ Domain Reload Profiling: 888ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.903 seconds
-Refreshing native plugins compatible for Editor in 2.59 ms, found 7 plugins.
+- Loaded All Assemblies, in  0.603 seconds
+Refreshing native plugins compatible for Editor in 3.04 ms, found 7 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for VisionOS target not found
+Native extension for iOS target not found
+2024-04-21 15:47:58.546 Unity[1457:17944] [XcodeApplications] Failed to read NSDictionary from path /Contents/Info.plist
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -142,48 +169,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.793 seconds
-Domain Reload Profiling: 1704ms
-	BeginReloadAssembly (188ms)
+- Finished resetting the current domain, in  0.621 seconds
+Domain Reload Profiling: 1224ms
+	BeginReloadAssembly (92ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (648ms)
-		LoadAssemblies (402ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (452ms)
+		LoadAssemblies (280ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (306ms)
-			TypeCache.Refresh (266ms)
-				TypeCache.ScanAssembly (226ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (794ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (181ms)
+				TypeCache.ScanAssembly (154ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (621ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (583ms)
+		SetupLoadedEditorAssemblies (480ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
+			InitializePlatformSupportModulesInManaged (48ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (431ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (332ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.18 seconds
-Refreshing native plugins compatible for Editor in 3.09 ms, found 7 plugins.
-Preloading 4 native plugins for Editor in 30.20 ms.
-Unloading 6881 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 151 unused Assets / (3.6 MB). Loaded Objects now: 7606.
-Memory consumption went from 284.5 MB to 280.8 MB.
-Total: 11.979959 ms (FindLiveObjects: 2.668041 ms CreateObjectMapping: 0.237167 ms MarkObjects: 6.206666 ms  DeleteObjects: 2.867542 ms)
+Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
+Refreshing native plugins compatible for Editor in 3.01 ms, found 7 plugins.
+Preloading 4 native plugins for Editor in 4.69 ms.
+Unloading 6880 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 123 unused Assets / (2.1 MB). Loaded Objects now: 7632.
+Memory consumption went from 285.1 MB to 282.9 MB.
+Total: 4.883500 ms (FindLiveObjects: 0.291083 ms CreateObjectMapping: 0.096125 ms MarkObjects: 3.338375 ms  DeleteObjects: 1.156875 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -200,9 +227,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 254743.502180 seconds.
-  path: Assets/Scenes/App Designs/Scenes/Matematica/ScaneazaCon.unity
-  artifactKey: Guid(78f1a765081b74944806396bc45db840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/App Designs/Scenes/Matematica/ScaneazaCon.unity using Guid(78f1a765081b74944806396bc45db840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6a3825f57f7cd0939ff913996d883f') in 0.002831 seconds
+  Time since last request: 1059.993968 seconds.
+  path: Assets/Scenes/App Designs/Aqueduct.fbx
+  artifactKey: Guid(2e026030c22944497aa703c0babd390e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/Aqueduct.fbx using Guid(2e026030c22944497aa703c0babd390e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab31e79b548818cf3eae34e415001d9') in 1.354150 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 28620
+========================================================================
+Received Import Request.
+  Time since last request: 176.756394 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/Fundaluri/clasa 5.6.png
+  artifactKey: Guid(119ef805cfaee45deb227ad12b5b52f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/Fundaluri/clasa 5.6.png using Guid(119ef805cfaee45deb227ad12b5b52f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ccd0c43849597fdc73e2fe4c918983') in 0.087581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/Fundaluri/Clasa_6.png
+  artifactKey: Guid(c3f84b3c5116c42f3941661d5aae6ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/Fundaluri/Clasa_6.png using Guid(c3f84b3c5116c42f3941661d5aae6ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0e504bda08df7fc55e554fe33495e3') in 0.013227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/Fundaluri/clasa 6.6.png
+  artifactKey: Guid(6378f9d81183843cd836e83a35617ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/Fundaluri/clasa 6.6.png using Guid(6378f9d81183843cd836e83a35617ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980f1b8800431b3244332b2eeb1160df') in 0.010525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/Fundaluri/Stelute.svg
+  artifactKey: Guid(b7ddfac024af94383b28764db3b41a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/Fundaluri/Stelute.svg using Guid(b7ddfac024af94383b28764db3b41a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc40340deadf3768ee7089bad3693770') in 0.006459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.294234 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/Fundaluri/Scroll + rings.png
+  artifactKey: Guid(0ac7b9a4ed88a4e8eaa34e53a17d804e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/Fundaluri/Scroll + rings.png using Guid(0ac7b9a4ed88a4e8eaa34e53a17d804e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bafcb6e5fdd3936f5d46b13838e39f') in 0.029287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 69.795351 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/FormePentruButoane/Icon Button.svg
+  artifactKey: Guid(2abe1b38012fd4ce9b214e1aa3e82f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/FormePentruButoane/Icon Button.svg using Guid(2abe1b38012fd4ce9b214e1aa3e82f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43236908525e325dfba8ba036e4a31a0') in 0.056902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/FormePentruButoane/YYY.svg
+  artifactKey: Guid(8b59661ffbd464b3da8c3e3744fdb7ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/FormePentruButoane/YYY.svg using Guid(8b59661ffbd464b3da8c3e3744fdb7ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97624d5c280bdd4e41d9e24df2dc403') in 0.007703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Scenes/App Designs/UI_Design/FormePentruButoane/Rectangle 34624322.png
+  artifactKey: Guid(9bed700b7200644beb7d1458082eedc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/App Designs/UI_Design/FormePentruButoane/Rectangle 34624322.png using Guid(9bed700b7200644beb7d1458082eedc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a52c60a39c064aa7fb70169a307f09') in 0.008870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
