@@ -913,7 +913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.10000229, y: 18.776964}
+  m_AnchoredPosition: {x: 0.10000229, y: 19.015772}
   m_SizeDelta: {x: 864.25, y: 555.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414195085
@@ -1533,7 +1533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.10000229, y: 36.56119}
+  m_AnchoredPosition: {x: 0.10000229, y: 36.8}
   m_SizeDelta: {x: 864.25, y: 555.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602394769
@@ -1809,7 +1809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.061912537, y: -52.649998}
+  m_AnchoredPosition: {x: 0.061912537, y: -52.41119}
   m_SizeDelta: {x: 864.25, y: 555.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786903308
@@ -2392,7 +2392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.16191483, y: -17.063614}
+  m_AnchoredPosition: {x: 0.16191483, y: -16.824806}
   m_SizeDelta: {x: 864.25, y: 555.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1110383782
@@ -2797,7 +2797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -0.02500534, y: -34.75}
+  m_AnchoredPosition: {x: -0.02500534, y: -34.511192}
   m_SizeDelta: {x: 862.5359, y: 555.84973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428873539
@@ -3140,7 +3140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.10000229, y: 0.8363863}
+  m_AnchoredPosition: {x: 0.10000229, y: 1.075195}
   m_SizeDelta: {x: 864.25, y: 555.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643997540
