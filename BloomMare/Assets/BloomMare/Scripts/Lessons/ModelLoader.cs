@@ -1,10 +1,8 @@
 using BloomMare.Data;
 using UnityEngine;
-using Vuforia;
 
 namespace BloomMare.Lessons {
     public class ModelLoader : MonoBehaviour {
-        [SerializeField] private VuforiaBehaviour m_VuforiaBehaviour;
         [SerializeField] private Lesson m_SelectedLesson;
         [SerializeField] private GlobalConfig m_GlobalConfig;
         [SerializeField] private GameObject m_ScanOverlay;
@@ -13,15 +11,16 @@ namespace BloomMare.Lessons {
             var target = Instantiate(m_GlobalConfig.activeTarget);
             var lessonModel = Instantiate(m_SelectedLesson.prefab, target.pivot.position, target.pivot.rotation, target.pivot);
 
-            m_VuforiaBehaviour.DevicePoseBehaviour.OnTargetStatusChanged += OnTargetStatusChanged;
+            target.TargetFound += OnTargetFound;
+            target.TargetLost += OnTargetLost;
         }
 
-        private void OnDestroy() {
-            m_VuforiaBehaviour.DevicePoseBehaviour.OnTargetStatusChanged -= OnTargetStatusChanged;
+        private void OnTargetFound() {
+            m_ScanOverlay.SetActive(true);
         }
 
-        private void OnTargetStatusChanged(ObserverBehaviour observer, TargetStatus status) {
-            m_ScanOverlay.SetActive(status.StatusInfo == StatusInfo.NOT_OBSERVED);
+        private void OnTargetLost() {
+            m_ScanOverlay.SetActive(false);
         }
     }
 }

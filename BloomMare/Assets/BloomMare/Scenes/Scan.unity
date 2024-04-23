@@ -487,7 +487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff221df393e38e4eba1209ac009a532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_VuforiaBehaviour: {fileID: 814633462}
   m_SelectedLesson: {fileID: 11400000, guid: b6adf1fd3c3da8a458a672e623efce19, type: 2}
   m_GlobalConfig: {fileID: 11400000, guid: 8bfaa0eaa81ae0b48a77163080d74525, type: 2}
   m_ScanOverlay: {fileID: 770069761}
@@ -748,7 +747,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.05
+  near clip plane: 0.01
   far clip plane: 2000
   field of view: 60
   orthographic: 0
