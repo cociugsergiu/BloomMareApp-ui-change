@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8_Physics_MotorCombustieInterna
   m_EditorClassIdentifier: 
   m_Title: "Motor cu combustie intern\u0103"
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 21300000, guid: 37e7de209b504ad4286d490e665b07f3, type: 3}
   m_Prefab: {fileID: 7240619428667767441, guid: 13a23f442186a2642883c46ebf0ced4c,
     type: 3}
   m_Subject: {fileID: 11400000, guid: de75469199bd9ec428be78977eeecf67, type: 2}
