@@ -487,8 +487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff221df393e38e4eba1209ac009a532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SelectedLesson: {fileID: 11400000, guid: b6adf1fd3c3da8a458a672e623efce19, type: 2}
-  m_GlobalConfig: {fileID: 11400000, guid: 8bfaa0eaa81ae0b48a77163080d74525, type: 2}
   m_ScanOverlay: {fileID: 770069761}
 --- !u!1 &579752455
 GameObject:
