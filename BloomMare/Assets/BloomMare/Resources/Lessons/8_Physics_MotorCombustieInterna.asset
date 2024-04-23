@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f19f55b70ac4555890b0df40de55342, type: 3}
+  m_Name: 8_Physics_MotorCombustieInterna
+  m_EditorClassIdentifier: 
+  m_Title: "Motor cu combustie intern\u0103"
+  m_Icon: {fileID: 0}
+  m_Prefab: {fileID: 7240619428667767441, guid: 13a23f442186a2642883c46ebf0ced4c,
+    type: 3}
+  m_Subject: {fileID: 11400000, guid: de75469199bd9ec428be78977eeecf67, type: 2}
+  m_Grade: {fileID: 11400000, guid: 65c74f7e86cf6544cb316feeae575a45, type: 2}

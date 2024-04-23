@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f19f55b70ac4555890b0df40de55342, type: 3}
+  m_Name: 6_Math_Con
+  m_EditorClassIdentifier: 
+  m_Title: Cuboid
+  m_Icon: {fileID: 21300000, guid: b2881a286b12641b4945d8bc4d1a790d, type: 3}
+  m_Prefab: {fileID: 2814235630625848451, guid: 8d01f90b7ca07ef488466b05da91a59d,
+    type: 3}
+  m_Subject: {fileID: 11400000, guid: 03bf244fa31c8874fa83cdace480d018, type: 2}
+  m_Grade: {fileID: 11400000, guid: a8e0b04e9549b824ab790eb97a3b093d, type: 2}

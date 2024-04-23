@@ -11,7 +11,7 @@ namespace BloomMare.UI {
         protected override void OnBeforeShow() {
             var buttonPrefab = Global.config.gradeButtonPrefab;
 
-            foreach (var grade in Global.GetAllGrades()) {
+            foreach (var grade in Global.GetAllValidGrades()) {
                 var gradeButton = Instantiate(buttonPrefab, m_Container);
                 gradeButton.Refresh(grade, OnPickGrade);
                 m_Buttons.Add(gradeButton);

@@ -61,9 +61,16 @@ namespace BloomMare {
             selectedLesson = lesson;
         }
 
-        public static Grade[] GetAllGrades() => m_Grades;
-        public static Subject[] GetAllSubjects() => m_Subjects;
-        public static Lesson[] GetAllLessons() => m_Lessons;
+        public static IEnumerable<Grade> GetAllValidGrades() {
+            foreach (var grade in m_Grades) {
+                foreach (var lesson in m_Lessons) {
+                    if (lesson.grade == grade) {
+                        yield return grade;
+                        break;
+                    }
+                }
+            }
+        }
 
         public static IEnumerable<Subject> GetSubjectsForGrade(Grade grade) {
             var uniqueSubjects = new HashSet<Subject>();
