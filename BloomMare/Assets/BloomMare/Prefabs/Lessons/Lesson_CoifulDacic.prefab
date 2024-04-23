@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8378201336365218917}
   m_Layer: 0
-  m_Name: CoifulDacic
+  m_Name: Lesson_CoifulDacic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

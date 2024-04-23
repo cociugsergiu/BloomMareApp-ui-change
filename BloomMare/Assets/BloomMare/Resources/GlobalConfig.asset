@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a880f9ed4c46fa9102a55631501c1b, type: 3}
+  m_Name: GlobalConfig
+  m_EditorClassIdentifier: 
+  m_ActiveTarget: {fileID: 8541426855443817187, guid: e7e09c0721dee0b49b7f35ea6078f91b,
+    type: 3}
+  m_GradesPath: Grades
+  m_SubjectsPath: Subjects
+  m_LessonsPath: Lessons
+  m_GradeButtonPrefab: {fileID: 228365605624199836, guid: e116177855527ea45b83f5892b7df40b,
+    type: 3}
+  m_SubjectButtonPrefab: {fileID: 9004306305202555240, guid: f2ff1027ba2bd59408d154afbb3448dd,
+    type: 3}
+  m_LessonButtonPrefab: {fileID: 3432462035218605926, guid: 1bf49ff6da34fe24e91514ae02344120,
+    type: 3}
