@@ -16,11 +16,11 @@ namespace BloomMare.Lessons {
         }
 
         private void OnTargetFound() {
-            m_ScanOverlay.SetActive(true);
+            m_ScanOverlay.SetActive(false);
         }
 
         private void OnTargetLost() {
-            m_ScanOverlay.SetActive(false);
+            m_ScanOverlay.SetActive(true);
         }
     }
 }

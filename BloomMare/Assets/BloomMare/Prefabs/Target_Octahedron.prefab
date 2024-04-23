@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Pivot: {fileID: 2628310622442225155}
+  m_ObserverEventHandler: {fileID: 1361143108170856875}
 --- !u!1 &5604571613203539316
 GameObject:
   m_ObjectHideFlags: 0
