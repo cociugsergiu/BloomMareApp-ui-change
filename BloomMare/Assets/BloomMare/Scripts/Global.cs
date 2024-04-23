@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using BloomMare.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -28,6 +29,10 @@ namespace BloomMare {
             m_Grades = Resources.LoadAll<Grade>(globalConfig.gradesPath);
             m_Subjects = Resources.LoadAll<Subject>(globalConfig.subjectsPath);
             m_Lessons = Resources.LoadAll<Lesson>(globalConfig.lessonsPath);
+
+            SelectGrade(m_Grades.FirstOrDefault());
+            SelectSubject(GetSubjectsForGrade(selectedGrade).FirstOrDefault());
+            SelectLesson(GetLessonsForGradeAndSubject(selectedGrade, selectedSubject).FirstOrDefault());
 
             Application.targetFrameRate = 60;
         }

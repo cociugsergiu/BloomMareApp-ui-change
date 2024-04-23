@@ -20,7 +20,7 @@ namespace BloomMare.UI {
 
         protected override void OnAfterHide() {
             foreach (var gradeButton in m_Buttons) {
-                Destroy(gradeButton);
+                Destroy(gradeButton.gameObject);
             }
 
             m_Buttons.Clear();

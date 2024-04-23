@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using BloomMare.Data;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace BloomMare {
     public class Bootstrapper : MonoBehaviour {
@@ -10,9 +9,8 @@ namespace BloomMare {
 
         private IEnumerator Start() {
             Global.Initialize(m_GlobalConfig);
-
             yield return new WaitForSeconds(m_LoadDelay);
-            SceneManager.LoadScene("Menu");
+            Global.LoadScene(SceneType.Menu);
         }
     }
 }

@@ -517,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96eec3fbb004eac81a0932729c392a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LoadDelay: 0
+  m_LoadDelay: 3
   m_GlobalConfig: {fileID: 11400000, guid: 8bfaa0eaa81ae0b48a77163080d74525, type: 2}
 --- !u!4 &1941602609
 Transform:
