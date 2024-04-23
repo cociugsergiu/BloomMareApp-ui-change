@@ -11,10 +11,12 @@ namespace BloomMare.UI {
         protected override void OnBeforeShow() {
             var buttonPrefab = Global.config.lessonButtonPrefab;
 
+            var index = 1;
             foreach (var lesson in Global.GetLessonsForGradeAndSubject(Global.selectedGrade, Global.selectedSubject)) {
                 var lessonButton = Instantiate(buttonPrefab, m_Container);
-                lessonButton.Refresh(lesson, OnPickLesson);
+                lessonButton.Refresh(lesson, index, OnPickLesson);
                 m_Buttons.Add(lessonButton);
+                index++;
             }
         }
 

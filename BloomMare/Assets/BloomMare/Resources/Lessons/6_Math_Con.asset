@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f19f55b70ac4555890b0df40de55342, type: 3}
   m_Name: 6_Math_Con
   m_EditorClassIdentifier: 
-  m_Title: Cuboid
+  m_Title: Con
   m_Icon: {fileID: 21300000, guid: b2881a286b12641b4945d8bc4d1a790d, type: 3}
   m_Prefab: {fileID: 2814235630625848451, guid: 8d01f90b7ca07ef488466b05da91a59d,
     type: 3}

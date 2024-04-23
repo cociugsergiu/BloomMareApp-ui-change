@@ -19,10 +19,10 @@ namespace BloomMare.UI {
             m_Button.onClick.AddListener(OnClicked);
         }
 
-        public void Refresh(Lesson lesson, Action<Lesson> onClick) {
+        public void Refresh(Lesson lesson, int index, Action<Lesson> onClick) {
             m_OnClick = onClick;
             m_Lesson = lesson;
-            m_Title.text = lesson.title;
+            m_Title.text = $"{index}. {lesson.title}";
             m_Icon.sprite = lesson.icon;
         }
 

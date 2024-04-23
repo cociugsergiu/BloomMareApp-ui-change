@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f19f55b70ac4555890b0df40de55342, type: 3}
-  m_Name: 8_Biology_Heart
+  m_Name: 8_Biology_Inima
   m_EditorClassIdentifier: 
   m_Title: Inima
   m_Icon: {fileID: 0}
