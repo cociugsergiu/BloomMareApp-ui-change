@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f19f55b70ac4555890b0df40de55342, type: 3}
+  m_Name: 8_Biology_Heart
+  m_EditorClassIdentifier: 
+  m_Title: Inima
+  m_Icon: {fileID: 0}
+  m_Prefab: {fileID: 613237327793677802, guid: f591dd0e2733fd940b6f91465b8609e7, type: 3}
+  m_Subject: {fileID: 11400000, guid: 8237f6bcf8934094e901300b3c3c5372, type: 2}
+  m_Grade: {fileID: 11400000, guid: 65c74f7e86cf6544cb316feeae575a45, type: 2}
