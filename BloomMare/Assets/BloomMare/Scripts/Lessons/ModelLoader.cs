@@ -6,7 +6,7 @@ namespace BloomMare.Lessons {
 
         private void Start() {
             var target = Instantiate(Global.config.activeTarget);
-            var lessonModel = Instantiate(Global.selectedLesson, target.pivot.position, target.pivot.rotation, target.pivot);
+            Instantiate(Global.selectedLesson.prefab, target.pivot.position, target.pivot.rotation, target.pivot);
 
             target.TargetFound += OnTargetFound;
             target.TargetLost += OnTargetLost;
