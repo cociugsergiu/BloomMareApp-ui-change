@@ -58,6 +58,9 @@ namespace BloomMare {
         }
 
         public static void LoadSceneImmediate(SceneType sceneType) {
+            PlayerPrefs.SetString(SETTINGS_KEY, JsonUtility.ToJson(settings));
+            PlayerPrefs.Save();
+
             var sceneName = sceneType switch {
                 SceneType.Menu => "Menu",
                 SceneType.Scan => "Scan",
@@ -119,9 +122,6 @@ namespace BloomMare {
         }
 
         private static void OnApplicationQuit() {
-            PlayerPrefs.SetString(SETTINGS_KEY, JsonUtility.ToJson(settings));
-            PlayerPrefs.Save();
-
             Application.quitting -= OnApplicationQuit;
 
             m_Config = null;
