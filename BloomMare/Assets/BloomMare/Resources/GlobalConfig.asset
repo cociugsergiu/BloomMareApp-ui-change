@@ -17,6 +17,7 @@ MonoBehaviour:
   m_DefaultSettings:
     flashToggleButton: 1
     focusOnTap: 0
+    postProcessing: 1
   m_GradesPath: Grades
   m_SubjectsPath: Subjects
   m_LessonsPath: Lessons
