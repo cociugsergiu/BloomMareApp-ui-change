@@ -14,8 +14,6 @@ namespace BloomMare.Controls {
         }
 
         private static void SetFocusRegion(Vector2 focusPosition, float extent) {
-            Debug.Log("Set focus region");
-
             var regionOfInterest = new CameraRegionOfInterest(focusPosition, extent);
             if (VuforiaBehaviour.Instance.CameraDevice.FocusRegionSupported) {
                 var success = VuforiaBehaviour.Instance.CameraDevice.SetFocusRegion(regionOfInterest);
