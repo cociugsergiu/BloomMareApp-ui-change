@@ -13,6 +13,11 @@ namespace BloomMare.Controls {
         private bool isOn { get; set; }
 
         private void Awake() {
+            if (!Global.settings.flashToggleButton) {
+                gameObject.SetActive(false);
+                return;
+            }
+
             var button = GetComponent<Button>();
             button.onClick.AddListener(ToggleFlashlight);
         }

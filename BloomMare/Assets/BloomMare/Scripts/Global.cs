@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using BloomMare.Data;
+using BloomMare.Settings;
 using BloomMare.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,11 +13,14 @@ namespace BloomMare {
     }
 
     public static class Global {
+        private const string SETTINGS_KEY = "SETTINGS";
+
         private static GlobalConfig m_Config;
         private static Grade[] m_Grades;
         private static Lesson[] m_Lessons;
         private static LoadingScreen m_LoadingScreen;
 
+        public static SettingsData settings { get; private set; }
         public static GlobalConfig config => m_Config;
 
         public static Grade selectedGrade { get; private set; }
@@ -30,14 +34,27 @@ namespace BloomMare {
             m_Grades = Resources.LoadAll<Grade>(globalConfig.gradesPath);
             m_Lessons = Resources.LoadAll<Lesson>(globalConfig.lessonsPath);
 
+            if (PlayerPrefs.HasKey(SETTINGS_KEY)) {
+                try {
+                    settings = JsonUtility.FromJson<SettingsData>(PlayerPrefs.GetString(SETTINGS_KEY));
+                }
+                catch (Exception e) {
+                    Debug.LogError($"Failed to load save with exception: {e}");
+                    settings = new SettingsData(globalConfig.defaultSettings);
+                }
+            }
+            else {
+                settings = new SettingsData(globalConfig.defaultSettings);
+            }
+
             Application.quitting += OnApplicationQuit;
         }
 
         public static void LoadScene(SceneType sceneType) {
-           m_LoadingScreen.Show(() => {
-               LoadSceneImmediate(sceneType);
-               m_LoadingScreen.Hide();
-           });
+            m_LoadingScreen.Show(() => {
+                LoadSceneImmediate(sceneType);
+                m_LoadingScreen.Hide();
+            });
         }
 
         public static void LoadSceneImmediate(SceneType sceneType) {
@@ -102,6 +119,9 @@ namespace BloomMare {
         }
 
         private static void OnApplicationQuit() {
+            PlayerPrefs.SetString(SETTINGS_KEY, JsonUtility.ToJson(settings));
+            PlayerPrefs.Save();
+
             Application.quitting -= OnApplicationQuit;
 
             m_Config = null;
@@ -111,6 +131,7 @@ namespace BloomMare {
             selectedGrade = null;
             selectedSubject = null;
             selectedLesson = null;
+            settings = null;
         }
     }
 }

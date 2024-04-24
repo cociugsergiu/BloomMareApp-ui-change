@@ -1,4 +1,5 @@
 ﻿using BloomMare.Lessons;
+using BloomMare.Settings;
 using BloomMare.UI;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace BloomMare.Data {
     public class GlobalConfig : ScriptableObject {
         [Tooltip("The target used for all lessons")]
         [SerializeField] private TargetObject m_ActiveTarget;
+        [SerializeField] private SettingsData m_DefaultSettings;
 
         [Header("Data")]
         [Tooltip("Grades path relative to Resources folder")]
@@ -22,6 +24,7 @@ namespace BloomMare.Data {
         [SerializeField] private LessonButton m_LessonButtonPrefab;
 
         public TargetObject activeTarget => m_ActiveTarget;
+        public SettingsData defaultSettings => m_DefaultSettings;
         public string gradesPath => m_GradesPath;
         public string subjectsPath => m_SubjectsPath;
         public string lessonsPath => m_LessonsPath;

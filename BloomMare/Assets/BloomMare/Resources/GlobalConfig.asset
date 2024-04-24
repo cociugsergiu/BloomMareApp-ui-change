@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActiveTarget: {fileID: 8541426855443817187, guid: e7e09c0721dee0b49b7f35ea6078f91b,
     type: 3}
+  m_DefaultSettings:
+    flashToggleButton: 1
+    focusOnTap: 0
   m_GradesPath: Grades
   m_SubjectsPath: Subjects
   m_LessonsPath: Lessons

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using Vuforia;
 
@@ -6,6 +7,12 @@ namespace BloomMare.Controls {
     public class CameraFocusSetter : MonoBehaviour {
         [SerializeField] private InputActionReference m_TriggerFocus;
         [SerializeField] private InputActionReference m_FocusPoint;
+
+        private void Awake() {
+            if (!Global.settings.focusOnTap) {
+                enabled = false;
+            }
+        }
 
         private void Update() {
             if (m_TriggerFocus.action.WasPressedThisFrame()) {
