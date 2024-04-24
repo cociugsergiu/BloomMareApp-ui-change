@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using BloomMare.Data;
+using BloomMare.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,7 @@ namespace BloomMare {
         private static GlobalConfig m_Config;
         private static Grade[] m_Grades;
         private static Lesson[] m_Lessons;
+        private static LoadingScreen m_LoadingScreen;
 
         public static GlobalConfig config => m_Config;
 
@@ -22,7 +24,8 @@ namespace BloomMare {
         public static Subject selectedSubject { get; private set; }
         public static Lesson selectedLesson { get; private set; }
 
-        public static void Initialize(GlobalConfig globalConfig) {
+        public static void Initialize(GlobalConfig globalConfig, LoadingScreen loadingScreen) {
+            m_LoadingScreen = loadingScreen;
             m_Config = globalConfig;
 
             m_Grades = Resources.LoadAll<Grade>(globalConfig.gradesPath);
@@ -34,6 +37,13 @@ namespace BloomMare {
         }
 
         public static void LoadScene(SceneType sceneType) {
+           m_LoadingScreen.Show(() => {
+               LoadSceneImmediate(sceneType);
+               m_LoadingScreen.Hide();
+           });
+        }
+
+        public static void LoadSceneImmediate(SceneType sceneType) {
             var sceneName = sceneType switch {
                 SceneType.Menu => "Menu",
                 SceneType.Scan => "Scan",
@@ -100,6 +110,7 @@ namespace BloomMare {
             m_Config = null;
             m_Grades = null;
             m_Lessons = null;
+            m_LoadingScreen = null;
             selectedGrade = null;
             selectedSubject = null;
             selectedLesson = null;
