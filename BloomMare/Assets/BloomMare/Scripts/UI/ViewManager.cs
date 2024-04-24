@@ -16,8 +16,14 @@ namespace BloomMare.UI {
                 view.Hide();
             }
 
-            if (m_StartView != null) {
-                Show(m_StartView);
+            Show<ViewPickGrade>();
+
+            if (Global.selectedSubject != null) {
+                Show<ViewPickSubject>();
+            }
+
+            if (Global.selectedLesson != null) {
+                Show<ViewPickLesson>();
             }
         }
 
