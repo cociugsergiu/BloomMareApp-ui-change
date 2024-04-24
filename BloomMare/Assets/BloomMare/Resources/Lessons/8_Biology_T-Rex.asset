@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8_Biology_T-Rex
   m_EditorClassIdentifier: 
   m_Title: T-Rex
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 21300000, guid: 920f52b0895c96c459809947826c37a1, type: 3}
   m_Prefab: {fileID: 6161125019686394915, guid: 5736003abf99d914cb70edcd46977d9e,
     type: 3}
   m_Subject: {fileID: 11400000, guid: 8237f6bcf8934094e901300b3c3c5372, type: 2}

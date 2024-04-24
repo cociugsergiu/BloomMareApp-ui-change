@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8_Biology_Crocodil
   m_EditorClassIdentifier: 
   m_Title: Crocodil
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 21300000, guid: 37cccf7f6e2ce74408c99f8cd08882b1, type: 3}
   m_Prefab: {fileID: 7236957222791570771, guid: fae3d368f36422540afa2c2eb1676a08,
     type: 3}
   m_Subject: {fileID: 11400000, guid: 8237f6bcf8934094e901300b3c3c5372, type: 2}

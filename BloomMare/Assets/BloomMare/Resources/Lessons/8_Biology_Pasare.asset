@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8_Biology_Pasare
   m_EditorClassIdentifier: 
   m_Title: "Pas\u0103re"
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 21300000, guid: 3a4d525a94a215b419086c22b28588fc, type: 3}
   m_Prefab: {fileID: 7184734976939031331, guid: fb3bb70b9337dd245b837ee0aed74ca6,
     type: 3}
   m_Subject: {fileID: 11400000, guid: 8237f6bcf8934094e901300b3c3c5372, type: 2}
