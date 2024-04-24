@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8_Biology_Inima
   m_EditorClassIdentifier: 
   m_Title: Inima
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 21300000, guid: a4c7ffe4138f0d443945ce0c5fcd4796, type: 3}
   m_Prefab: {fileID: 613237327793677802, guid: f591dd0e2733fd940b6f91465b8609e7, type: 3}
   m_Subject: {fileID: 11400000, guid: 8237f6bcf8934094e901300b3c3c5372, type: 2}
   m_Grade: {fileID: 11400000, guid: 65c74f7e86cf6544cb316feeae575a45, type: 2}

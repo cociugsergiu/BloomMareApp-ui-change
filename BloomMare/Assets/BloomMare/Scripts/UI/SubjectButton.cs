@@ -8,6 +8,7 @@ namespace BloomMare.UI {
     [RequireComponent(typeof(Button))]
     public class SubjectButton : MonoBehaviour {
         [SerializeField] private TMP_Text m_Title;
+        [SerializeField] private Image m_Icon;
 
         private Subject m_Subject;
         private Button m_Button;
@@ -22,6 +23,7 @@ namespace BloomMare.UI {
             m_OnClick = onClick;
             m_Subject = subject;
             m_Title.text = subject.subjectName;
+            m_Icon.sprite = subject.icon;
         }
 
         private void OnClicked() {

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Subject_Biology
   m_EditorClassIdentifier: 
   m_SubjectName: Biologia
+  m_Icon: {fileID: 21300000, guid: 50ee8821bb0942c4e88dec4701003caf, type: 3}

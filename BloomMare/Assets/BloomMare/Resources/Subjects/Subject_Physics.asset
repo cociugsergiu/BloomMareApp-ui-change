@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Subject_Physics
   m_EditorClassIdentifier: 
   m_SubjectName: Fizica
+  m_Icon: {fileID: 21300000, guid: 3a232c1ccab4c50499c7eb66dbce67b4, type: 3}

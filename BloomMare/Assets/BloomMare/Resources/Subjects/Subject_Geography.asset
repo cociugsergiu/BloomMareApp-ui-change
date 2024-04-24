@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Subject_Geography
   m_EditorClassIdentifier: 
   m_SubjectName: Geografia
+  m_Icon: {fileID: 3286163911610860551, guid: 9b140739aebf340abb789d699f26859a, type: 3}

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Subject_History
   m_EditorClassIdentifier: 
   m_SubjectName: Istoria
+  m_Icon: {fileID: 3286163911610860551, guid: 56949b7b8bd9e4cc4a1a71c98dbdfc54, type: 3}

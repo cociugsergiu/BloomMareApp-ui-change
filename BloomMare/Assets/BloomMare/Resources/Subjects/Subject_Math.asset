@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Subject_Math
   m_EditorClassIdentifier: 
   m_SubjectName: Matematica
+  m_Icon: {fileID: 3286163911610860551, guid: 2991bd6252be5428e8e6193985ee2cff, type: 3}
