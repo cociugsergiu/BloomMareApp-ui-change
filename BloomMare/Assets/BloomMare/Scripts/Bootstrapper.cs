@@ -10,6 +10,8 @@ namespace BloomMare {
         [SerializeField] private GlobalConfig m_GlobalConfig;
 
         private IEnumerator Start() {
+            Application.targetFrameRate = 60;
+
             DontDestroyOnLoad(m_LoadingScreen.gameObject);
             Global.Initialize(m_GlobalConfig, m_LoadingScreen);
             yield return new WaitForSeconds(m_LoadDelay);

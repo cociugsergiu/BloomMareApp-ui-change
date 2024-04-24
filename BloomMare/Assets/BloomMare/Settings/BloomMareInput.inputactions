@@ -1,0 +1,54 @@
+{
+    "name": "BloomMareInput",
+    "maps": [
+        {
+            "name": "Camera",
+            "id": "8a98062f-cd77-41f4-9889-fa60ff5bcf3e",
+            "actions": [
+                {
+                    "name": "TriggerFocus",
+                    "type": "Button",
+                    "id": "88a08195-80ce-4cc7-b7f1-8172537a214e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FocusPoint",
+                    "type": "Value",
+                    "id": "4d8a3ca7-8e04-4ba6-9809-e1e69e8538de",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dde52687-1523-4da7-a638-2e470553aaaf",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FocusPoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f22d90e9-04f6-47ce-af99-5196c086c9b2",
+                    "path": "<Pointer>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerFocus",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

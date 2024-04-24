@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using BloomMare.Data;
 using BloomMare.UI;
 using UnityEngine;
@@ -30,8 +29,6 @@ namespace BloomMare {
 
             m_Grades = Resources.LoadAll<Grade>(globalConfig.gradesPath);
             m_Lessons = Resources.LoadAll<Lesson>(globalConfig.lessonsPath);
-
-            Application.targetFrameRate = 60;
 
             Application.quitting += OnApplicationQuit;
         }
