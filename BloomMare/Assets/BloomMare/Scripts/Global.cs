@@ -14,7 +14,6 @@ namespace BloomMare {
     public static class Global {
         private static GlobalConfig m_Config;
         private static Grade[] m_Grades;
-        private static Subject[] m_Subjects;
         private static Lesson[] m_Lessons;
 
         public static GlobalConfig config => m_Config;
@@ -27,14 +26,11 @@ namespace BloomMare {
             m_Config = globalConfig;
 
             m_Grades = Resources.LoadAll<Grade>(globalConfig.gradesPath);
-            m_Subjects = Resources.LoadAll<Subject>(globalConfig.subjectsPath);
             m_Lessons = Resources.LoadAll<Lesson>(globalConfig.lessonsPath);
 
-            SelectGrade(m_Grades.FirstOrDefault());
-            SelectSubject(GetSubjectsForGrade(selectedGrade).FirstOrDefault());
-            SelectLesson(GetLessonsForGradeAndSubject(selectedGrade, selectedSubject).FirstOrDefault());
-
             Application.targetFrameRate = 60;
+
+            Application.quitting += OnApplicationQuit;
         }
 
         public static void LoadScene(SceneType sceneType) {
@@ -96,6 +92,17 @@ namespace BloomMare {
                     yield return lesson;
                 }
             }
+        }
+
+        private static void OnApplicationQuit() {
+            Application.quitting -= OnApplicationQuit;
+
+            m_Config = null;
+            m_Grades = null;
+            m_Lessons = null;
+            selectedGrade = null;
+            selectedSubject = null;
+            selectedLesson = null;
         }
     }
 }
